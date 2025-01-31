@@ -60,11 +60,11 @@ The Simulink model consists of key components such as:
 
 The following results were obtained from the simulation:
 
-- **Motor speed (**\*\*****`wm`**\*\*\*\***, **\*\*\*\***`wr`**\*\*\*\***)\*\*
-- **Armature current (**\*\*****`ia`**\*\*\*\***, **\*\*\*\***`iar`**\*\*\*\***)\*\*
-- **Voltages (**\*\*****`Vc`**\*\*\*\***, **\*\*\*\***`Va`**\*\*\*\***)\*\*
-- **Firing angle (**\*\*****`alpha`**\*\*\*\***)\*\*
-- **Electromagnetic torque (**\*\*****`Te`**\*\*\*\***)\*\*
+- **Motor speed (`wm`,`wr`)**
+- **Armature current (`ia`,`iar`)**
+- **Voltages (`Vc`,`Va`)**
+- **Firing angle (`alpha`)**
+- **Electromagnetic torque (`Te`)**
 
 ## 📂 Repository Structure
 
@@ -112,16 +112,16 @@ This project successfully demonstrates a **closed-loop speed-controlled DC motor
 
 ### **DC Motor Model**
 
-- Receives the **controlled DC voltage (**\*\*****`Va`**\*\*\*\***)\*\* from the rectifier.
+- Receives the **controlled DC voltage (`Va`) from the rectifier**.
 - Simulated using the **electromechanical transfer function**:
-  \1/(La.s + Ra) for electrical dynamics, and
-  \1/(J.s + Bt) for mechanical dynamics.
+  1/(La.s + Ra) for electrical dynamics, and
+  1/(J.s + Bt) for mechanical dynamics.
 - The back EMF coefficient (`Kb`) influences the motor's response.
 - Feedback mechanisms regulate motor speed (`wm`).
 
 ### **Angle and Torque Computation**
 
-- The model computes the **firing angle (**\*\*****`alpha`**\*\*\*\***)\*\* by converting voltage signals (`Vc`) into degrees.
-- The **electromagnetic torque (**\*\*****`Te`**\*\*\*\***)\*\* is derived from the motor's electrical and mechanical response.
+- The model computes the **firing angle** (`alpha`) by converting voltage signals (`Vc`) into degrees.
+- The \*\*electromagnetic torque (`Te`) is derived from the motor's electrical and mechanical response.
 
 ## 📌 For any issues or contributions, feel free to open an **Issue** or a **Pull Request!** 🚀
